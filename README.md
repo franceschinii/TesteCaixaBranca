@@ -1,17 +1,32 @@
 # TesteCaixaBranca
  
-Erros no código
+# Sistema de Autenticação de Usuários
 
-1. **Carregamento do driver JDBC:**
-- O nome da classe do driver do MySQL está incorreto. Deve ser `com.mysql.cj.jdbc.Driver` em vez de `com.mysql.Driver.Manager`.
-- `newInstance()` é desnecessário ao carregar o driver.
+Este repositório contém a implementação de um sistema simples de autenticação de usuários utilizando Java. O projeto inclui métodos para conectar-se a um banco de dados MySQL e verificar a existência de um usuário com base em seu login e senha.
 
-2. **Manuseio de exceções:**
-- Os blocos `catch` estão vazios, o que não é uma boa prática, pois você não terá informações sobre falhas. É importante pelo menos registrar ou imprimir a exceção.
+## Funcionalidades
 
-3. **Construção da instrução SQL:**
-- Está faltando um espaço antes da cláusula `where` na string SQL, o que causará um erro ao executar a query.
-- A concatenação direta de valores na query pode levar a vulnerabilidades de SQL Injection. Use `PreparedStatement` para evitar isso.
+- Conexão com o banco de dados MySQL.
+- Verificação de usuário e senha.
 
-4. **Recuperação do nome do usuário:**
-- Quando você chama `rs.getString(nome)`, você deve passar o nome da coluna em vez da variável `nome` que você definiu como uma string vazia. Deveria ser algo como `rs.getString("nome")`.
+## Tecnologias Utilizadas
+
+- Java
+- MySQL
+- JDBC
+
+## Como Usar
+
+Para utilizar este projeto, clone o repositório e compile os arquivos Java. Certifique-se de que o MySQL está configurado corretamente e acessível pelo código.
+
+## Documentação
+
+A documentação gerada pelo Javadoc pode ser encontrada na pasta `doc` após a geração usando o comando Javadoc mencionado acima.
+
+## Contribuições
+
+Contribuições para o projeto são bem-vindas. Antes de fazer um pull request, por favor discuta as alterações que você deseja fazer via issues.
+
+## Licença
+
+[MIT](https://choosealicense.com/licenses/mit/)
