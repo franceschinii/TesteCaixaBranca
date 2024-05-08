@@ -1,6 +1,6 @@
 # TesteCaixaBranca
  
-# Sistema de Autenticação de Usuários
+## Sistema de Autenticação de Usuários
 
 Este repositório contém a implementação de um sistema simples de autenticação de usuários utilizando Java. O projeto inclui métodos para conectar-se a um banco de dados MySQL e verificar a existência de um usuário com base em seu login e senha.
 
