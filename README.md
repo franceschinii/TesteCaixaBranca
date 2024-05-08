@@ -17,7 +17,7 @@ Grafo de Fluxo
   - 17 -> 22 (sem entrar no if e sem exceção)
 
 # Complexidade Ciclomática
--A complexidade ciclomática é calculada como V(G) = E - N + 2P:
+- A complexidade ciclomática é calculada como V(G) = E - N + 2P:
 
   - E é o número de arestas
   - N é o número de nodos
