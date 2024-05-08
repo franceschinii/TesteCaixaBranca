@@ -1,6 +1,6 @@
 # TesteCaixaBranca
  
- #Erros no código
+Erros no código
 
 1. **Carregamento do driver JDBC:**
 - O nome da classe do driver do MySQL está incorreto. Deve ser `com.mysql.cj.jdbc.Driver` em vez de `com.mysql.Driver.Manager`.
